@@ -1,4 +1,4 @@
-package io.github.nanquanu.sonarQubeTest;
+package io.github.nanquanu.sonarQubeTest.codesmells;
 
 public class Calculator {
    public int add(int a, int b) { return a + b; }
