@@ -8,6 +8,30 @@ public class Calculator {
       else return a / b;
    }
 
+   public int cyclomaticMonster(int a) {
+   int b = 5;
+
+      while( a < 10 ) {
+         while( b < 10 ) {
+            while( b < 10 ) {
+               while( b < 10 ) {
+                  while( b < 10 ) {
+                     while( b < 10 ) {
+                        while( b < 10 ) {
+                           while( b < 10 ) {
+                              while( b < 10 ) {
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      return a + 1;
+   }
    public int addOne(int a) { return a + 1; }
    public int subtractOne(int a) { return a - 1; }
    public int doubleValue(int a) { return a * 2; }
