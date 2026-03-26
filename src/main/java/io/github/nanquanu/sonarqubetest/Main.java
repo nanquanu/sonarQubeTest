@@ -1,4 +1,4 @@
-package io.github.nanquanu.sonarQubeTest;
+package io.github.nanquanu.sonarqubetest;
 
 /**
  * Hello world!
