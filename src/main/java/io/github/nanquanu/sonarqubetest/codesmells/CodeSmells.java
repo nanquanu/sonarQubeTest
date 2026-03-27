@@ -1,14 +1,13 @@
 package io.github.nanquanu.sonarqubetest.codesmells;
 
 import java.util.*;  
-import javax.annotation.Nonnull;  
 
-public class BadCode implements Cloneable {  
+public class CodeSmells {
     
     private static int counter = 0;  
     
     public static void main(String[] args) {
-        BadCode obj = new BadCode();
+        CodeSmells obj = new CodeSmells();
         obj.incrementCounter();  
         
         switch (args.length) {  
@@ -24,9 +23,10 @@ public class BadCode implements Cloneable {
             System.out.println("No braces!");
         
         for (int i = 0; i < 5; i = i + 1) {  
-            if (i == 2) 
+            if (i == 2)
+            { System.out.println("Bad if chain"); }
             else if (i == 3)  
-                System.out.println("Bad if chain");
+            { System.out.println("Bad if chain"); }
         }
         
         String s = "hello\u0000world";  
@@ -37,8 +37,4 @@ public class BadCode implements Cloneable {
         counter++;  
     }
     
-    @Override
-    public boolean equals(@Nonnull Object obj) {  
-        return this == obj;
-    }
 }
