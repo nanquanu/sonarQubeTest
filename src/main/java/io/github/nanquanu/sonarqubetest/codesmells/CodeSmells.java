@@ -4,37 +4,37 @@ import java.util.*;
 
 public class CodeSmells {
     
-    private static int counter = 0;  
+    private static int elementCount = 0;  
     
     public static void main(String[] args) {
         CodeSmells obj = new CodeSmells();
-        obj.incrementCounter();  
+        obj.updateElementCount();  
         
         switch (args.length) {  
             case 0:
-                System.out.println("No args");
+                System.out.println("Zero parameters");
                 break;
             case 1:
-                System.out.println("One arg");  
+                System.out.println("Single parameter");  
                 break;
         }
         
         if (true)  
-            System.out.println("No braces!");
+            System.out.println("I'm true!");
         
-        for (int i = 0; i < 5; i = i + 1) {  
-            if (i == 2)
-            { System.out.println("Bad if chain"); }
-            else if (i == 3)  
-            { System.out.println("Bad if chain"); }
+        for (int j = 0; j < 5; j = j + 1) {  
+            if (j == 2)
+            { System.out.println("j equals 2"); }
+            else if (j == 3)  
+            { System.out.println("j equals "); }
         }
         
-        String s = "hello\u0000world";  
-        System.out.println(s.replaceAll("l", "x"));  
+        String text = "greeting\\u0000phrase";  
+        System.out.println(text.replaceAll("e", "z"));  
     }
     
-    public void incrementCounter() {
-        counter++;  
+    public void updateElementCount() {
+        elementCount++;  
     }
     
 }
