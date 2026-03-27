@@ -6,6 +6,7 @@ public class Calculator {
    public int multiply(int a, int b) { return a * b ; }
 
    public int divide(int a, int b) {
+        b = 0;
         return a / b;
 //      if(b == 0) return 0; // Geen foutafhandeling
 //      else return a / b;
