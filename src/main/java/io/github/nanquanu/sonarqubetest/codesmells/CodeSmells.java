@@ -3,7 +3,6 @@ package io.github.nanquanu.sonarqubetest.codesmells;
 import java.util.*;  
 
 public class CodeSmells {
-    
     private static int elementCount = 0;  
     
     public static void main(String[] args) {
