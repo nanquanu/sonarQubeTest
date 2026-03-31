@@ -12,6 +12,12 @@ public class DuplicateCode {
         }
     }
 
+    public void printInts() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+    }
+
     public static void main(String[] args) {
         DuplicateCode p = new DuplicateCode();
         p.printNumbers();
